@@ -1,4 +1,5 @@
 import { useState } from "react";
+import FormBuilder from "./FormBuilder";
 
 const PersonalInfo = () => {
 	const [toggleValue, setToggleValue] = useState(false);
@@ -13,18 +14,16 @@ const PersonalInfo = () => {
 				Personal Info
 			</div>
 
-			<div className=" flex flex-col gap-4  justify-center items-start   py-10 px-8">
+			<div className=" flex flex-col gap-4  justify-center items-start   pb-10 pt-6 px-8">
 				<div className="form-control w-full ">
 					<label className="label -ml-1">
 						<span className="label-text text-lg text-gray-600 font-semibold">
 							First Name
 						</span>
 					</label>
-					<input
-						type="text"
-						className=" border-gray-400 border-0 border-b-2 rounded-none focus:outline-none  w-full "
-					/>
 				</div>
+
+				<div className="w-full border border-gray-600"></div>
 
 				<div className="form-control w-full ">
 					<label className="label -ml-1">
@@ -32,11 +31,9 @@ const PersonalInfo = () => {
 							Last Name
 						</span>
 					</label>
-					<input
-						type="text"
-						className=" border-gray-400 border-0 border-b-2 rounded-none focus:outline-none  w-full "
-					/>
 				</div>
+
+				<div className="w-full border border-gray-600"></div>
 
 				<div className="form-control w-full ">
 					<label className="label -ml-1">
@@ -44,11 +41,9 @@ const PersonalInfo = () => {
 							Email
 						</span>
 					</label>
-					<input
-						type="email"
-						className=" border-gray-400 border-0 border-b-2 rounded-none focus:outline-none  w-full "
-					/>
 				</div>
+
+				<div className="w-full border border-gray-600"></div>
 
 				<div className="form-control w-full ">
 					<label className="label -ml-1 flex gap-10">
@@ -85,11 +80,9 @@ const PersonalInfo = () => {
 							</label>
 						</div>
 					</label>
-					<input
-						type="number"
-						className=" border-gray-400 border-0 border-b-2 rounded-none focus:outline-none  w-full "
-					/>
 				</div>
+
+				<div className="w-full border border-gray-600"></div>
 
 				<div className="form-control w-full ">
 					<label className="label -ml-1 flex justify-between">
@@ -125,11 +118,9 @@ const PersonalInfo = () => {
 							</div>
 						</div>
 					</label>
-					<input
-						type="text"
-						className=" border-gray-400 border-0 border-b-2 rounded-none focus:outline-none  w-full "
-					/>
 				</div>
+
+				<div className="w-full border border-gray-600"></div>
 
 				<div className="form-control w-full ">
 					<label className="label -ml-1 flex justify-between">
@@ -165,11 +156,9 @@ const PersonalInfo = () => {
 							</div>
 						</div>
 					</label>
-					<input
-						type="text"
-						className=" border-gray-400 border-0 border-b-2 rounded-none focus:outline-none  w-full "
-					/>
 				</div>
+
+				<div className="w-full border border-gray-600"></div>
 
 				<div className="form-control w-full ">
 					<label className="label -ml-1 flex justify-between">
@@ -205,11 +194,9 @@ const PersonalInfo = () => {
 							</div>
 						</div>
 					</label>
-					<input
-						type="number"
-						className=" border-gray-400 border-0 border-b-2 rounded-none focus:outline-none  w-full "
-					/>
 				</div>
+
+				<div className="w-full border border-gray-600"></div>
 
 				<div className="form-control w-full ">
 					<label className="label -ml-1 flex justify-between">
@@ -245,11 +232,9 @@ const PersonalInfo = () => {
 							</div>
 						</div>
 					</label>
-					<input
-						type="date"
-						className=" border-gray-400 border-0 border-b-2 rounded-none focus:outline-none  w-full "
-					/>
 				</div>
+
+				<div className="w-full border border-gray-600"></div>
 
 				<div className="form-control w-full ">
 					<label className="label -ml-1 flex justify-between">
@@ -285,11 +270,11 @@ const PersonalInfo = () => {
 							</div>
 						</div>
 					</label>
-					<input
-						type="date"
-						className=" border-gray-400 border-0 border-b-2 rounded-none focus:outline-none  w-full "
-					/>
 				</div>
+
+				<div className="w-full border border-gray-600"></div>
+
+				<FormBuilder />
 			</div>
 		</div>
 	);
