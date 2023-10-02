@@ -45,7 +45,7 @@ const ImageUpload = () => {
 							className="rounded-tl-2xl rounded-tr-2xl max-w-full max-h-[300px] "
 						/>
 					</div>
-					<div
+					<button
 						className="py-5 px-7  font-semibold bg-white rounded-bl-2xl rounded-br-2xl flex gap-4 justify-start items-center cursor-pointer"
 						onClick={handleImageDeletion}
 					>
@@ -53,7 +53,7 @@ const ImageUpload = () => {
 						<span className="font-bold text-[15px] text-red-600 mt-0.5">
 							Delete Image
 						</span>
-					</div>
+					</button>
 				</div>
 			) : (
 				<div>
